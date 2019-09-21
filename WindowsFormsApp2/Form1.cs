@@ -12,9 +12,15 @@ namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
+        Convertir con = new Convertir();
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            txtresultado.Text = con.enletras(txtnumero.Text).ToLower();
         }
     }
 }
