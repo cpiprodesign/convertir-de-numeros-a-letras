@@ -20,7 +20,7 @@ namespace WindowsFormsApp2
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            txtresultado.Text = con.enletras(txtnumero.Text).ToLower();
+            txtresultado.Text = con.enletras(txtnumero.Text).ToUpper();
         }
     }
 }
